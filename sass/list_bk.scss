@@ -1,0 +1,173 @@
+@import "compass";
+@import "compass/css3";
+@import "compass/utilities/general/clearfix";
+@import "icon/*.png";
+
+body.list{
+	.bar.bar-header-secondary{
+		border-bottom:0px;
+		.segmented-control{
+			background-color:#26a4bb;
+			border-color:#0c8097;
+			.control-item{
+				font-size:14px;
+				color:#fff;
+				border-left:#0c8097;
+				&:active,&.active{
+					background-color:#0c8097;
+				}
+				&.navigate-left{
+					&::after{
+						color:#fff;	
+					}
+					
+				}
+			}
+		}		
+	}
+	.content{
+		.table-view{
+			border-top:0px;
+			border-bottom:0px;
+			margin-top:0px;
+			.table-view-cell{
+				padding-right:15px;
+				border-bottom:0px;
+				.segmented-control{
+					width:100%;
+					text-align:left;
+					border:0px;
+					.control-item{
+						border-left:0px;
+						width:(100% /4);
+						&:active,&.active{
+							background-color:inherit;
+							color:#929292;
+						}
+					}
+				}			
+				&.bread{
+					padding-bottom:0px;
+					background-image:none;
+					.segmented-control{
+						background-color:#ccc;
+					}	
+				}
+
+
+				&.odd{
+					background-color:#f3f3f3;
+					.segmented-control{
+						background-color:inherit;
+					}
+				}
+			}
+			.verticalAccordion {
+				width: 100%;
+				.table-view-cell{
+					background-image:none;
+					padding-bottom:0px;
+					.segmented-control{										
+						padding-bottom:10px;
+						background-color:none;
+						border:0px;
+						cusor: pointer;
+						&:before{
+							content:"";
+							border: 5px solid #929292;
+							border-color: #929292 transparent transparent;
+							position: absolute;
+							right: 10px;
+							top: 10px;
+							width: 0;
+							height: 0;					
+						}
+						&.open{
+							&:before{
+								border-color: transparent transparent #929292;
+								top:2px;
+							}
+						}
+						.control-item{
+							$widths: (1024px 994px/4) (966px 936px/4) (960px 930px/4) (768px 738px/4) (720px 690px/4) (600px 570px/4) (568px 538px/4) (540px 510px/4) (480px 450px/4) (424px 394px/4) (400px 370px/4) (384px 354px/4) (360px 330px/4) (320px 290px/4) (240px 210px/4);
+							@each $width_def in $widths {
+							    $wide: nth($width_def, 1);
+							    $new_wide: nth($width_def, 2);
+								@media all and (max-device-width: #{$wide}){
+									display:inline-block;
+									width: #{$new_wide};
+								}								    
+							}								
+						}
+					}
+					.detail{
+						display:none;
+						background-color:#fff;
+						padding: 10px;
+						color:#929292;
+						font-size:14px;	
+						.table-view-cell.media{
+							img.media-object{
+								height:inherit;
+							}	
+							>p{
+								display:inline-block;
+								padding-bottom:10px;
+							}							
+						}
+
+					}					
+				}
+			}
+		}
+
+	}
+	#category_list{
+		.table-view-cell{
+			margin-right:15px;
+		}
+	}
+	.modal{
+		.content.search{
+			.table-view-cell{
+				padding-right:15px;
+				label{
+					display:inline-block;
+					width:100%;
+					height:inherit;
+					span{
+						display:inline-block;
+						padding-right:1em;
+					}
+					input[type='radio']{
+						display:none;
+					}
+					i.radio-btn{
+						display:inline-block;
+						width:22px;
+						height:22px;
+						position:relative;
+						top:5px;
+						@include icon-sprite(radio);
+						&:hover{
+							@include icon-sprite(radio_hover);
+						}
+						&.active{
+							@include icon-sprite(radio_active);
+						} 
+					}
+				}
+				&.search-name{
+					input[type='text']{
+						margin-bottom:0px;
+					}					
+				}
+			}
+
+		}
+	}
+}
+
+
+
+
