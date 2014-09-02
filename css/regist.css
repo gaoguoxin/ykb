@@ -1,0 +1,59 @@
+/* line 1, ../sass/regist.scss */
+.bar.bar-nav {
+  background: #0c8097;
+  color: #fff; }
+  /* line 4, ../sass/regist.scss */
+  .bar.bar-nav .pull-left, .bar.bar-nav .pull-right {
+    color: #fff;
+    font-size: 17px; }
+  /* line 8, ../sass/regist.scss */
+  .bar.bar-nav .title {
+    color: #fff; }
+
+/* line 14, ../sass/regist.scss */
+.content {
+  font-size: 14px; }
+  /* line 17, ../sass/regist.scss */
+  .content .input-row label {
+    width: 25%;
+    padding: 10px 0px 10px 15px; }
+  /* line 21, ../sass/regist.scss */
+  .content .input-row input[type='password'], .content .input-row input[type='text'] {
+    width: 75%; }
+  /* line 24, ../sass/regist.scss */
+  .content .input-row.first {
+    text-align: center;
+    height: 35px;
+    line-height: 35px; }
+  /* line 29, ../sass/regist.scss */
+  .content .input-row.verify {
+    height: 35px;
+    line-height: 35px;
+    padding-left: 15px; }
+    /* line 33, ../sass/regist.scss */
+    .content .input-row.verify label {
+      padding-left: 0px; }
+      /* line 35, ../sass/regist.scss */
+      .content .input-row.verify label img {
+        float: left;
+        margin-right: 15px; }
+    /* line 42, ../sass/regist.scss */
+    .content .input-row.verify a {
+      display: inline-block;
+      float: left; }
+  /* line 49, ../sass/regist.scss */
+  .content button.btn-primary {
+    background: #ff8200;
+    color: #fff;
+    border-color: #ff8200;
+    left: 10%;
+    font-size: 20px;
+    width: 75%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    outline: none; }
+  /* line 60, ../sass/regist.scss */
+  .content .f-psw {
+    padding-bottom: 10px;
+    padding-right: 15px;
+    text-align: right; }

@@ -353,7 +353,7 @@
       </header>
 
       <div class="content search">
-        <form class="content-padded">
+        <form  action='' method='post'>
           <div class="card">
             <ul class="table-view">
               <li class="table-view-cell table-view-divider">品种</li>
@@ -438,7 +438,7 @@
       </header>
 
       <div class="content subscribe">
-        <form class="content-padded">
+        <form action='' method='post'>
           <input type='hidden' name='category_id' />
           <div class="card">
             <ul class="table-view"> 
@@ -472,14 +472,14 @@
               <li class="table-view-cell">
                  <input type="text" name='price' value='100' /> 
               </li>                   
-<!--               <li class="table-view-cell table-view-divider">开始时间 </li>
+              <li class="table-view-cell table-view-divider">开始时间 </li>
               <li class="table-view-cell">
                 <input type="text" name='start_time' id='start_time' /> 
               </li> 
               <li class="table-view-cell table-view-divider">结束时间</li>
               <li class="table-view-cell">
                 <input type="text" name='end_time' id='end_time' />
-              </li> -->
+              </li>
             </ul>
           </div>
           <a class="btn btn-positive btn-block" href="#subscribe">订阅</a>
@@ -500,62 +500,42 @@
           $('#category_list').removeClass('visible');
           $('div.backdrop').remove();
       });
+
+      //icheck
+      $('.content.search .table-view-cell').on('touchend',function(){
+        var radio = $(this).find('.radio-btn');
+        
+        if(radio.length > 0){
+          var radio_name = radio.attr('name');
+          $('i[name="' + radio_name + '"]').not(this).removeClass('ok');
+          radio.addClass('active');
+        }
+      })
+      //icheck
+      $('.content.subscribe .table-view-cell label').on('touchend',function(){
+        var radio = $(this).find('.radio-btn');
+        if(radio.length > 0){
+          var radio_name = radio.attr('name');
+          $('i[name="' + radio_name + '"]').not(this).removeClass('ok');
+          radio.addClass('ok');
+        }
+      })
+      
+      $('.verticalAccordion .segmented-control .btn').on('touchend',function(){    
+          //$(this).parents().siblings('.detail').show(500);
+          child = $(this).children('span');
+          if(child.text() == '查看'){
+            child.text('收起');
+            $(this).parents().siblings('.detail').show();
+          }else{
+            child.text('查看');
+            $(this).parents().siblings('.detail').hide();
+          }
+      })
+
     });
       
-    //icheck
-    $('.content.search .table-view-cell').on('touchend',function(){
-      var radio = $(this).find('.radio-btn');
-      
-      if(radio.length > 0){
-        var radio_name = radio.attr('name');
-        $('i[name="' + radio_name + '"]').not(this).removeClass('ok');
-        radio.addClass('active');
-      }
-    })
 
-    // calendar
-    // $('#start_time','#end_time').datepicker();
-
-    //icheck
-    $('.content.subscribe .table-view-cell label').on('touchend',function(){
-      var radio = $(this).find('.radio-btn');
-      if(radio.length > 0){
-        var radio_name = radio.attr('name');
-        $('i[name="' + radio_name + '"]').not(this).removeClass('ok');
-        radio.addClass('ok');
-      }
-    })
-
- $('.verticalAccordion .segmented-control .btn').on('touchend',function(){    
-      //$(this).parents().siblings('.detail').show(500);
-      child = $(this).children('span');
-      if(child.text() == '查看'){
-        child.text('收起');
-        $(this).parents().siblings('.detail').show();
-      }else{
-        child.text('查看');
-        $(this).parents().siblings('.detail').hide();
-      }
-    })
-
-
-
-
-
-    // $('.verticalAccordion .segmented-control .control-item').on('click',function(){
-     
-    //   // $(this).next('.detail').show();
-    //   // $('.detail').hide();
-    //   // if($(this).hasClass('open')){
-    //   //   $(this).removeClass('open')
-    //   //   $(this).next('.detail').slideUp();
-    //   // }else{ 
-    //   //   $(this).parent().siblings().find('.segmented-control').removeClass('open')
-    //   //   $(this).addClass('open');
-    //   //   $(this).next('.detail').slideDown();
-    //   //   $(this).next('.detail').css({'height':'auto'});
-    //   // }
-    // })
     </script>
   </body>
 </html>

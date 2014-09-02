@@ -1,0 +1,65 @@
+.bar.bar-nav{
+	background:#0c8097;
+	color:#fff;
+	.pull-left,.pull-right{
+		color:#fff;
+		font-size:17px;
+	}
+	.title{
+		
+		color:#fff;
+	}
+
+}
+.content{
+	font-size:14px;
+	.input-row{
+		label{
+			width:25%;
+			padding:10px 0px 10px 15px;
+		}
+		input[type='password'],input[type='text']{
+			width:75%;
+		}
+		&.first{
+			text-align:center;
+			height:35px;
+			line-height:35px;
+		}
+		&.verify{
+			height:35px;
+			line-height:35px;
+			padding-left:15px;
+			label{
+				padding-left:0px;
+				img{
+					float:left;
+					// margin-top:6px;
+					margin-right:15px;
+				}				
+			}
+
+			a{
+				display:inline-block;
+				float:left;
+			}			
+		}
+
+	}
+	button.btn-primary{
+		background:#ff8200;
+		color:#fff;
+		border-color:#ff8200;
+		left:10%;
+		font-size:20px;
+		width:75%;
+		margin-top:20px;
+		margin-bottom:20px;
+		outline:none;
+	}
+	.f-psw{
+		padding-bottom:10px;
+		padding-right:15px;
+		text-align:right;
+	}
+}

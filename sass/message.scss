@@ -1,0 +1,118 @@
+@import "compass";
+@import "compass/css3";
+@import "compass/utilities/general/clearfix";
+@import "icon/*.png";
+
+body.list{
+	.content{
+		.segmented-control.drop-nav{
+
+			border:0px;
+			border-radius:0px;
+			background-color:#26a4bb;
+			.control-item{
+				height:50px;
+				line-height:50px;
+				color:#fff;
+				&:active,&.active{
+					background-color:transparent;
+				}
+				&.category,&.charge{
+					position:relative;
+					font-size:14px;
+					.icon{
+						font-size:12px;
+						margin-left:6px;
+					}
+				}
+			}
+	
+		}
+		.table-view{
+			border-top:0px;
+			border-bottom:0px;
+			margin-top:0px;
+			.table-view-cell{
+				padding-right:15px;
+				border-bottom:0px;
+				.segmented-control{
+					width:100%;
+					text-align:left;
+					font-size:14px;
+					border:0px;
+					background-color:#fff;
+					.control-item{
+						color:#929292;
+						border:0px;
+						border-radius:0px;
+						width:(100% /4);
+						&:active,&.active{
+							background-color:inherit;
+							color:#929292;
+						}
+					}
+				}			
+				&.odd{
+					background-color:#f3f3f3;
+					.segmented-control{
+						background-color:inherit;
+					}
+				}			
+			}
+
+			.table-view-cell{
+				background-image:none;
+				padding-bottom:0px;
+				padding-right:0px;
+				.segmented-control{										
+					padding-bottom:10px;
+					background-color:none;
+					border:0px;
+					cusor: pointer;
+					.control-item{
+						height:27px;
+						line-height:27px;
+					}
+					.btn{
+						width:54px;
+					}
+				}				
+			}
+
+			.pagenate{
+				.segmented-control{
+					.control-item{
+						&.disable{
+							background-color:#929292;
+						}
+					} 
+				}
+			}
+		}
+	}
+
+	// #cate-list,#charge-list{
+	// 	width:110px;
+	// 	ul{
+	// 		list-style:none;
+	// 		text-align:center;
+	// 		padding:0px;
+	// 		margin:0px;
+	// 		background:#fff;
+	// 		text-align:left;
+	// 		padding:0px 8px;
+	// 		li{
+	// 			border-bottom:1px solid #929292;
+	// 			&:last-child{
+	// 				border-bottom:none;
+	// 			}
+	// 		}
+	// 	}
+	// }
+
+	
+}
+
+
+
+

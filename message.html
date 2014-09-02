@@ -1,0 +1,144 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>消息列表</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="css/ratchet.css">
+    <link rel="stylesheet" href="css/ratchet-theme-ios.min.css">
+    <link rel="stylesheet" href="css/message.css">
+  </head>
+  <body class='list'>
+    <div class="content">
+      <div class="segmented-control drop-nav">
+        <a class="control-item category" href='#cate-list'>品种<span class="icon icon-down-nav"></span></a>
+        <a class="control-item charge" href='#charge-list'>买/卖<span class="icon icon-down-nav"></span></a>        
+      </div>      
+      <ul class="table-view">    
+          <li class="table-view-cell even">
+            <div class="segmented-control">
+              <span class="control-item" >7小时前</span>
+              <span class="control-item">浴马图大版</span>
+              <span class="control-item"><b>￥</b>16(买)</span>
+            </div>  
+          </li>
+          <li class="table-view-cell odd">
+            <div class="segmented-control">
+              <span class="control-item" >7小时前</span>
+              <span class="control-item">大陆奥运绿钞</span>
+              <span class="control-item"><b>￥</b>16(买)</span>
+            </div>  
+        
+          </li>   
+          <li class="table-view-cell even">
+            <div class="segmented-control">
+              <span class="control-item" >7小时前</span>
+              <span class="control-item">大陆奥运绿钞</span>
+              <span class="control-item"><b>￥</b>16(买)</span>
+            </div>           
+          </li>
+          <li class="table-view-cell odd">
+            <div class="segmented-control">
+              <span class="control-item" >7小时前</span>
+              <span class="control-item">大陆奥运绿钞</span>
+              <span class="control-item"><b>￥</b>16(买)</span>
+            </div>   
+          </li>
+          <li class="table-view-cell even">
+            <div class="segmented-control">
+              <span class="control-item" >7小时前</span>
+              <span class="control-item">大陆奥运绿钞</span>
+              <span class="control-item"><b>￥</b>16(买)</span>
+            </div>           
+          </li>   
+          <li class="table-view-cell odd">
+            <div class="segmented-control">
+              <span class="control-item" >7小时前</span>
+              <span class="control-item">大陆奥运绿钞</span>
+              <span class="control-item"><b>￥</b>16(买)</span>
+            </div>             
+          </li>
+          <li class="table-view-cell even">
+            <div class="segmented-control">
+              <span class="control-item" >7小时前</span>
+              <span class="control-item">大陆奥运绿钞</span>
+              <span class="control-item"><b>￥</b>16(买)</span>
+            </div>       
+          </li>
+          <li class="table-view-cell odd">
+            <div class="segmented-control">
+              <span class="control-item" >7小时前</span>
+              <span class="control-item">大陆奥运绿钞</span>
+              <span class="control-item"><b>￥</b>16(买)</span>
+            </div>  
+          </li>   
+          <li class="table-view-cell even">
+            <div class="segmented-control">
+              <span class="control-item" >7小时前</span>
+              <span class="control-item">大陆奥运绿钞</span>
+              <span class="control-item"><b>￥</b>16(买)</span>
+            </div>  
+          </li>
+          <li class="table-view-cell odd">
+            <div class="segmented-control">
+              <span class="control-item" >7小时前</span>
+              <span class="control-item">大陆奥运绿钞</span>
+              <span class="control-item"><b>￥</b>16(买)</span>
+            </div>          
+          </li>                            
+      </ul>
+      <div class='pagenate'>
+        <div class="segmented-control">
+          <a class="control-item" href='#'>上一页</a>
+          <a class="control-item" href='#'>下一页</a>
+        </div>          
+      </div>        
+    </div>
+
+
+    <div id='cate-list' class='popover'>
+      <ul class="table-view">
+        <li class="table-view-cell"><a href='javascript:void(0);'>品种1</a></li>
+        <li class="table-view-cell"><a href='javascript:void(0);'>品种1</a></li>
+        <li class="table-view-cell"><a href='javascript:void(0);'>品种1</a></li>
+        <li class="table-view-cell"><a href='javascript:void(0);'>品种1</a></li>
+        <li class="table-view-cell"><a href='javascript:void(0);'>品种1</a></li>
+        <li class="table-view-cell"><a href='javascript:void(0);'>品种1</a></li>   
+        <li class="table-view-cell"><a href='javascript:void(0);'>品种1</a></li>
+        <li class="table-view-cell"><a href='javascript:void(0);'>品种1</a></li>
+        <li class="table-view-cell"><a href='javascript:void(0);'>品种1</a></li>
+        <li class="table-view-cell"><a href='javascript:void(0);'>品种1</a></li>
+        <li class="table-view-cell"><a href='javascript:void(0);'>品种1</a></li>                              
+      </ul>
+    </div>
+
+
+    <div id='charge-list' class='popover'>
+      <ul class="table-view">
+        <li class="table-view-cell"><a href='#'>买</a></li> 
+        <li class="table-view-cell"><a href='#'>卖</a></li> 
+      </ul>
+    </div>
+
+
+    <script src="js/ratchet.min.js"></script>
+    <script src="js/zepto.min.js"></script>
+    <script src="js/zepto.slide.transition.min.js"></script>
+    <script type='text/javascript'>
+    $(function(){
+
+      $('#cate-list .table-view-cell').on('touchend', function() {
+          $('#cate-list').removeClass('visible');
+          $('div.backdrop').remove();
+      });
+
+      $('#charge-list .table-view-cell').on('touchend', function() {
+          $('#charge-list').removeClass('visible');
+          $('div.backdrop').remove();
+      });
+
+    });
+    </script>
+  </body>
+</html>

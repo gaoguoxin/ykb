@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>订阅列表</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link href="css/ratchet.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/ratchet-theme-ios.min.css">
+    <link href="css/subscribe.css" rel="stylesheet">
+    <script src="js/ratchet.min.js"></script>
+    <script src="js/zepto.min.js"></script>
+  </head>
+  <body>
+
+    <header class="bar bar-nav">
+      <h1 class="title">我的订阅</h1>
+    </header>
+    <div class="content">
+      <div class="card">
+        <ul class="table-view">
+          <li class="table-view-cell">
+            <a href='#subscribe' id='category_1'>
+            <span class='name'>二轮蛇兑奖版</span><span class='other'><span>￥126</span><span>未定</span></span>
+            </a>
+          </li>
+          <li class="table-view-cell">
+           <a href='#subscribe' id='category_1'>
+            <span class='name'>二轮蛇兑奖版</span><span class='other'><span>￥126</span><span>未定</span></span>
+            </a>
+          </li>
+          <li class="table-view-cell">
+            <a href='#subscribe' id='category_1'>
+            <span class='name'>二轮蛇兑奖版</span><span class='other'><span>￥126</span><span>未定</span></span>
+            </a>
+          </li>
+          <li class="table-view-cell">
+            <a href='#subscribe' id='category_1'>
+            <span class='name'>二轮蛇兑奖版</span><span class='other'><span>￥126</span><span>未定</span></span>
+            </a>
+          </li>
+          <li class="table-view-cell">
+            <a href='#subscribe' id='category_1'>
+            <span class='name'>二轮蛇兑奖版</span><span class='other'><span>￥126</span><span>未定</span></span>
+            </a>
+          </li> 
+          <li class="table-view-cell">
+            <a href='#subscribe' id='category_1'>
+            <span class='name'>二轮蛇兑奖版</span><span class='other'><span>￥126</span><span>未定</span></span>
+            </a>
+          </li>
+          <li class="table-view-cell">
+            <a href='#subscribe' id='category_1'>
+            <span class='name'>二轮蛇兑奖版</span><span class='other'><span>￥126</span><span>未定</span></span>
+            </a>
+          </li>
+          <li class="table-view-cell">
+            <a href='#subscribe' id='category_1'>
+            <span class='name'>二轮蛇兑奖版</span><span class='other'><span>￥126</span><span>未定</span></span>
+            </a>
+          </li>
+          <li class="table-view-cell">
+            <a href='#subscribe' id='category_1'>
+            <span class='name'>二轮蛇兑奖版</span><span class='other'><span>￥126</span><span>未定</span></span>
+            </a>
+          </li>
+          <li class="table-view-cell">
+            <a href='#subscribe' id='category_1'>
+            <span class='name'>二轮蛇兑奖版</span><span class='other'><span>￥126</span><span>未定</span></span>
+            </a>
+          </li>
+
+          <li class="table-view-cell pagenate">
+            <a class='page' href='#'>上一页</a>
+            <a class='page' href='#'>下一页</a>
+            </a>
+          </li>  
+        </ul>
+      </div>
+    </div>
+
+
+
+    <div id="subscribe" class="modal">
+      <header class="bar bar-nav">
+        <a class="icon icon-left pull-left" href="#subscribe"></a>
+        <h1 class="title">订阅管理</h1>
+      </header>
+      <div class="content">
+        <form action='' method='post'>
+          <div class="card">
+            <ul class="table-view">
+              <li class="table-view-cell table-view-divider">名称</li>
+              <li class="table-view-cell search-name">
+                浴马图大版
+              </li>
+              <li class="table-view-cell table-view-divider">买/卖</li>
+              <li class="table-view-cell">
+                <label>
+                  <i class='radio-btn' name='charge_type'></i>
+                  <input type="radio" name='charge_type' value='0'> 
+                  <span>买</span>                 
+                </label>
+               </li> 
+              <li class="table-view-cell">
+                <label>
+                  <i class='radio-btn' name='charge_type'></i>
+                  <input type="radio" name='charge_type' value='1'> 
+                   <span>卖</span>                 
+                </label>
+               </li> 
+              <li class="table-view-cell">
+                <label>
+                  <i class='radio-btn' name='charge_type'></i>
+                  <input type="radio" name='charge_type' value='2'>  
+                   <span>不确定</span>                
+                </label>
+              </li>  
+              <li class="table-view-cell table-view-divider">价格 </li>         
+              <li class="table-view-cell">
+                 <input type="text" name='price' value='100' /> 
+              </li>                   
+              <li class="table-view-cell table-view-divider">开始时间 </li>
+              <li class="table-view-cell">
+                <input type="text" name='start_time' id='start_time' /> 
+              </li> 
+              <li class="table-view-cell table-view-divider">结束时间</li>
+              <li class="table-view-cell">
+                <input type="text" name='end_time' id='end_time' />
+              </li>                                                                             
+            </ul>
+          </div>
+          <div class='btn-container'>
+            <a class='btn btn-positive'>修改</a>
+            <a class='btn btn-negative'>删除</a>
+          </div>        
+        </form>
+      </div>
+    </div>
+
+
+    <script type='text/javascript'>
+      $(function(){
+        $('#subscribe .table-view-cell label').on('touchend',function(){
+          var radio = $(this).find('.radio-btn');
+          if(radio.length > 0){
+            var radio_name = radio.attr('name');
+            $('i[name="' + radio_name + '"]').not(this).removeClass('ok');
+            radio.addClass('ok');
+          }
+        })
+      })
+    </script>
+  </body>
+</html>

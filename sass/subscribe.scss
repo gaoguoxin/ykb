@@ -1,0 +1,89 @@
+@import "compass";
+@import "compass/css3";
+@import "compass/utilities/general/clearfix";
+@import "icon/*.png";
+.content{
+	.card{
+		.table-view{
+			.table-view-cell{
+				padding-right:15px;
+				> a:not(.btn){
+					margin: -11px -15px -11px -15px;
+					&.page{
+						// margin: -11px 0px -11px -15px;
+						display:inline-block;
+						width:40%;
+						text-align:center;
+						float:left;
+						&:last-child{
+							float:right;
+						}
+					}
+				}
+				.name{
+					float:left;
+				}
+				.other{
+					float:right;
+					color:#5cb85c;
+					span{
+						&:first-child{
+							margin-right:10px;
+							color:#d9534f;
+						}
+					}
+				}
+				// &.pagenate{
+				// 	padding-right:0px;
+				// }
+			}
+		}
+	}
+}
+#subscribe{
+	.table-view-cell{
+		label{
+			display:inline-block;
+			width:100%;
+			input[type='radio']{
+				display:none;
+			}
+			i.radio-btn{
+				display:inline-block;
+				width:22px;
+				height:22px;
+				position:relative;
+				top:5px;
+				@include icon-sprite(radio);
+				&:hover{
+					@include icon-sprite(radio_hover);
+				}
+				&.ok{
+					@include icon-sprite(radio_active);
+				} 
+			}
+
+
+		}
+	}
+	.btn-container{
+		display: block;
+		width: 100%;
+		padding: 15px 0;
+		margin-bottom: 10px;
+		font-size: 18px;
+		.btn{
+			width:40%;
+			margin:0px 15px 30px;
+			font-size:17px;
+			&.btn-positive{
+				float:left;
+			}
+			&.btn-negative{
+				float:right;
+			}
+		}
+	}
+
+
+}
